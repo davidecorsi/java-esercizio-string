@@ -17,5 +17,24 @@ public class Main {
 		String name = input.nextLine();
 		System.out.print("Inserisci il cognome ");
 		String surname = input.nextLine();
+		String asterisksRow = "********************" +
+		                      "********************" +
+		                      "********************" +
+		                      "********************";
+		String whiteRow = "                    " +
+				          "                    " +
+				          "                    " +
+				          "                    ";
+		String phrase = (name + " " + surname).toUpperCase();
+		int lenght = phrase.length();
+		String frameRow = asterisksRow.substring(0, lenght + 6);
+		String spaces = whiteRow.substring(0, lenght + 4);
+		String middleRow = "*" + spaces + "*";
+		String textRow = "*  " + phrase + "  *";
+		System.out.println(frameRow);
+		System.out.println(middleRow);
+		System.out.println(textRow);
+		System.out.println(middleRow);
+		System.out.println(frameRow);
 	}
 }
