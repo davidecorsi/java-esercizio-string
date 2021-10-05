@@ -17,14 +17,10 @@ public class Main {
 		String name = input.nextLine();
 		System.out.print("Inserisci il cognome ");
 		String surname = input.nextLine();
-		String asterisksRow = "********************" +
-		                      "********************" +
-		                      "********************" +
-		                      "********************";
-		String whiteRow = "                    " +
-				          "                    " +
-				          "                    " +
-				          "                    ";
+		String asterisk = "*";
+		String asterisksRow = asterisk.repeat(80);
+		String white = " "; 
+		String whiteRow = white.repeat(80);
 		String phrase = (name + " " + surname).toUpperCase();
 		int lenght = phrase.length();
 		String frameRow = asterisksRow.substring(0, lenght + 6);
